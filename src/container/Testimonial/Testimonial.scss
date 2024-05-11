@@ -13,7 +13,6 @@
     padding: 2rem;
     border-radius: 15px;
     box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.1);
-
     transition: all 0.3s ease-in-out;
 
     img {
@@ -91,7 +90,6 @@
         height: 50px;
         border-radius: 50%;
         background-color: var(--white-color);
-
         margin: 1rem;
         transition: all 0.3s ease-in-out;
 
@@ -157,4 +155,93 @@
     @media screen and (max-width: 800px) {
         width: 100%;
     }
+}
+
+body {
+    display: flex;
+    background: #111;
+    perspective: 1000px;
+    transform-style: preserve-3d;
+}
+
+#drag-container,
+#spin-container {
+    position: relative;
+    display: flex;
+    margin: auto;
+    transform-style: preserve-3d;
+    transform: rotateX(-10deg);
+}
+
+#drag-container img,
+#drag-container video {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    line-height: 200px;
+    font-size: 50px;
+    text-align: center;
+    box-shadow: 0 0 8px #fff;
+    box-reflect: below 10px linear-gradient(transparent, transparent, #0005);
+
+    &:hover {
+        box-shadow: 0 0 15px #fffd;
+        box-reflect: below 10px linear-gradient(transparent, transparent, #0007);
+    }
+}
+
+#drag-container video {
+    box-shadow: 0 0 8px #fff;
+    box-reflect: below 10px linear-gradient(transparent, transparent, #0005);
+}
+
+#drag-container p {
+    font-family: Serif;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotateX(90deg);
+    color: #fff;
+}
+
+#ground {
+    width: 900px;
+    height: 900px;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotateX(90deg);
+    background: radial-gradient(center center, farthest-side, #9993, transparent);
+}
+
+#music-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+@keyframes spin {
+    from {
+        transform: rotateY(0deg);
+    }
+
+    to {
+        transform: rotateY(360deg);
+    }
+}
+
+@keyframes spinRevert {
+    from {
+        transform: rotateY(360deg);
+    }
+
+    to {
+        transform: rotateY(0deg);
+    }
+}
+
+.word {
+    color: black;
 }
