@@ -53,31 +53,29 @@ const Skills = () => {
                             key={experience.year}
                         >
                             <div className="app__skills-exp-year">
-                                <p className="bold-text" key={experience.year}>{experience.year}</p>
+                                <p className="bold-text">{experience.year}</p>
                             </div>
                             <motion.div className="app__skills-exp-works">
-                                {experience.works.map((work) => (
-                                    <>
-                                        <motion.div
-                                            whileInView={{ opacity: [0, 1] }}
-                                            transition={{ duration: 0.5 }}
-                                            className="app__skills-exp-work"
-                                            data-tip
-                                            data-for={work.name}
-                                            key={work.name}
-                                        >
-                                            <h4 className="bold-text">{work.name}</h4>
-                                            <p className="p-text">{work.company}</p>
-                                        </motion.div>
-                                        <Tooltip
-                                            id={work.name}
-                                            effect="solid"
-                                            arrowColor="#fff"
-                                            className="skills-tooltip"
-                                        >
-                                            {work.desc}
-                                        </Tooltip>
-                                    </>
+                                {experience.works.map((work, index) => (<div key={index}>
+                                    <motion.div
+                                        whileInView={{ opacity: [0, 1] }}
+                                        transition={{ duration: 0.5 }}
+                                        className="app__skills-exp-work"
+                                        data-tip
+                                        data-for={work.name}
+                                    >
+                                        <h4 className="bold-text">{work.name}</h4>
+                                        <p className="p-text">{work.company}</p>
+                                    </motion.div>
+                                    <Tooltip
+                                        id={work.name}
+                                        effect="solid"
+                                        arrowColor="#fff"
+                                        className="skills-tooltip"
+                                    >
+                                        {work.desc}
+                                    </Tooltip>
+                                </div>
                                 ))}
                             </motion.div>
                         </motion.div>

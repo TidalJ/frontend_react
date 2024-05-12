@@ -45,7 +45,7 @@ const Work = () => {
     return (
         <>
             <h2 className='head-text'>
-                <span> Portfolio </span>
+                <span>Web Develop </span>
                 Section
             </h2>
 

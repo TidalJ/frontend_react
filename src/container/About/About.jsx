@@ -66,10 +66,9 @@ const About = () => {
     return (
         <>
             <h2 className='head-text'>
-                <span>Good Creativity</span>
-                <br />
-                has
-                <span> Unlimited possibilities</span>
+                <span>Video </span>
+                Section
+                {/* <span> Unlimited possibilities</span> */}
             </h2>
 
             <div className='app__profiles'>
@@ -97,7 +96,7 @@ const About = () => {
                                     frameBorder={0}
                                     autoPlay=""
                                     title='A'
-                                    allowFullScreen="true"
+                                    allowFullScreen={true}
                                 />
                                 <div className="content-sinopse">
                                     <div className="title">Synopsis</div>
@@ -128,7 +127,7 @@ const About = () => {
                                     frameBorder={0}
                                     autoPlay=""
                                     title='A'
-                                    allowFullScreen="true"
+                                    allowFullScreen={true}
                                 />
                                 <div className="content-sinopse">
                                     <div className="title">Synopsis</div>
@@ -161,7 +160,7 @@ const About = () => {
                                     frameBorder={0}
                                     autoPlay=""
                                     title='A'
-                                    allowFullScreen="true"
+                                    allowFullScreen={true}
                                 />
                                 <div className="content-sinopse">
                                     <div className="title">Synopsis</div>
