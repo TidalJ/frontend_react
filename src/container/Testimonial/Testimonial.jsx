@@ -130,7 +130,7 @@ const Testimonial = () => {
             </h2>
             <div id="drag-container">
                 <div id="spin-container">
-                    {/* Add your images (or video) here */}
+
                     <img
                         src="https://telegraph-image-59y.pages.dev/file/0d5b9e346f70a4f8402ad.png"
                         alt=""
@@ -155,37 +155,18 @@ const Testimonial = () => {
                         src="https://telegraph-image-59y.pages.dev/file/d4917112e661c0196de61.png"
                         alt=""
                     />
-                    {/* Example image with link */}
                     <img
                         src="https://fastly.jsdelivr.net/gh/TidalJ/Picture-Bed@main/1690162587906DSCF0170.JPG"
                         alt=""
                     />
 
 
-
-
-
-                    {/* Example add video  */}
-                    {/* <video controls autoPlay loop>
-                        <source src="https://fastly.jsdelivr.net/gh/TidalJ/Picture-Bed@main/1690162587906DSCF0170.mp4" type="video/mp4" />
-
-                    </video> */}
-                    {/* <video src="https://fastly.jsdelivr.net/gh/TidalJ/Picture-Bed@main/1690162587906DSCF0170.mp4" type="video/mp4" controls="controls"></video> */}
-
-                    {/* Text at center of ground */}
                     <p className="word">Jay Art</p>
 
                 </div>
                 <div id="ground" />
             </div>
-            <div id="music-container" />
 
-            <style
-                dangerouslySetInnerHTML={{
-                    __html:
-                        ".github-corner:hover .octo-arm{animation:octocat-wave 560ms ease-in-out}@keyframes octocat-wave{0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}@media (max-width:500px){.github-corner:hover .octo-arm{animation:none}.github-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}}"
-                }}
-            />
         </>
 
     );
