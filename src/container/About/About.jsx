@@ -6,7 +6,7 @@ import './About.scss';
 import { AppWrap, MotionWrap } from '../../wrapper';
 import { urlFor, client } from '../../client';
 
-const About = () => {
+const Video = () => {
 
     const [abouts, setAbouts] = useState([]);
 
@@ -199,7 +199,7 @@ const About = () => {
 // export default AppWrap(About, 'about');
 
 export default AppWrap(
-    MotionWrap(About, 'app__about'),
-    'about',
+    MotionWrap(Video, 'app__about'),
+    'video',
     'app__whitebg',
 );

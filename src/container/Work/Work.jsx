@@ -7,7 +7,7 @@ import { client, urlFor } from '../../client';
 
 import './Work.scss';
 
-const Work = () => {
+const Develop = () => {
 
 
     const [activeFilter, setActiveFilter] = useState('All');
@@ -115,7 +115,7 @@ const Work = () => {
 }
 
 export default AppWrap(
-    MotionWrap(Work, 'app__works'),
-    'work',
+    MotionWrap(Develop, 'app__works'),
+    'develop',
     'app__primarybg'
 );

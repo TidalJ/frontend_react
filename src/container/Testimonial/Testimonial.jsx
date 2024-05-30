@@ -3,7 +3,7 @@ import { AppWrap, MotionWrap } from '../../wrapper';
 import './Testimonial.scss';
 import { useEffect } from 'react';
 
-const Testimonial = () => {
+const Photo = () => {
     useEffect(() => {
         // You can change global variables here:
         var radius = 280; // how big of the radius
@@ -173,7 +173,7 @@ const Testimonial = () => {
 };
 
 export default AppWrap(
-    MotionWrap(Testimonial, 'app__testimonial'),
-    'testimonial',
+    MotionWrap(Photo, 'app__testimonial'),
+    'photo',
     'app__primarybg',
 );
