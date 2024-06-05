@@ -50,7 +50,7 @@ const Develop = () => {
             </h2>
 
             <div className='app__work-filter'>
-                {['Web App', 'UI/UX', 'All'].map((item, index) => (
+                {['Web App', 'Next JS', 'All'].map((item, index) => (
                     <div key={index} onClick={() => handleWorkFilter(item)} className={`app__work-filter-item app__flex p-text ${activeFilter === item ? 'item -active' : ''}`}>
                         {item}
                     </div>
